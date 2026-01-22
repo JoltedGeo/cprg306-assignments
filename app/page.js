@@ -1,9 +1,13 @@
-import StudentInfo from "@/StudentInfo";
-export default function Page() {
+import Link from "next/link";
+
+export default function HomePage() {
   return (
     <main>
-      <h1>Shopping List</h1>
-      <StudentInfo />
+      <h1>CPRG 306: Web Development 2 - Assignments</h1>
+
+      <Link href="/week-2/cprg306-assignments">
+        Week 2 Assignment
+      </Link>
     </main>
   );
 }
