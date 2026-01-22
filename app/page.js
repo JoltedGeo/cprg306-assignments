@@ -5,7 +5,7 @@ export default function HomePage() {
     <main>
       <h1>CPRG 306: Web Development 2 - Assignments</h1>
 
-      <Link href="/week-2/cprg306-assignments">
+      <Link href="/week-2">
         Week 2 Assignment
       </Link>
     </main>
