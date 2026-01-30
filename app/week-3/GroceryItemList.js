@@ -3,79 +3,79 @@ import Item from "./item";
 const item1 = {
   name: "milk, 4 L 🥛",
   quantity: 1,
-  category: "dairy",
+  category: "Dairy",
 };
  
 const item2 = {
   name: "bread 🍞",
   quantity: 2,
-  category: "bakery",
+  category: "Bakery",
 };
  
 const item3 = {
   name: "eggs, dozen 🥚",
   quantity: 2,
-  category: "dairy",
+  category: "Dairy",
 };
  
 const item4 = {
   name: "bananas 🍌",
   quantity: 6,
-  category: "produce",
+  category: "Produce",
 };
  
 const item5 = {
   name: "broccoli 🥦",
   quantity: 3,
-  category: "produce",
+  category: "Produce",
 };
  
 const item6 = {
   name: "chicken breasts, 1 kg 🍗",
   quantity: 1,
-  category: "meat",
+  category: "Meat",
 };
  
 const item7 = {
   name: "pasta sauce 🍝",
   quantity: 3,
-  category: "canned goods",
+  category: "Canned Goods",
 };
  
 const item8 = {
   name: "spaghetti, 454 g 🍝",
   quantity: 2,
-  category: "dry goods",
+  category: "Dry Goods",
 };
  
 const item9 = {
   name: "toilet paper, 12 pack 🧻",
   quantity: 1,
-  category: "household",
+  category: "Household",
 };
  
 const item10 = {
   name: "paper towels, 6 pack",
   quantity: 1,
-  category: "household",
+  category: "Household",
 };
  
 const item11 = {
   name: "dish soap 🍽️",
   quantity: 1,
-  category: "household",
+  category: "Household",
 };
  
 const item12 = {
   name: "hand soap 🧼",
   quantity: 4,
-  category: "household",
+  category: "Household",
 };
 
 export default function GroceryItemList() {
   return (
     /*-- Make each item a box with padding with a set width --*/
-    <ul className="">
+    <ul className="space-y-2">
       <Item name={item1.name} quantity={item1.quantity} category={item1.category} />
       <Item name={item2.name} quantity={item2.quantity} category={item2.category} />
       <Item name={item3.name} quantity={item3.quantity} category={item3.category} />
