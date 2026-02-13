@@ -37,8 +37,8 @@ export default function NewItem (){
             required
             onChange={(e) => setName(e.target.value)}
             placeholder="e.g., milk, 4 L 🥛"
-            className="w-full p-2 mb-3 border rounded-md placeholder-gray-400 text-black border-purple-600 animate-pulse"
-        />
+            className="w-full p-2 mb-3 border rounded-md placeholder-gray-400 text-black border-purple-600 animate-pulse"/>
+            
         {/* Quantity and Category */}
         <div className="flex gap-2 mb-3">
 
@@ -53,8 +53,7 @@ export default function NewItem (){
                     max="99"
                     value={quantity}
                     onChange={(e) => setQuantity(Number(e.target.value))}
-                    className="p-2 border rounded-md text-gray-400 border-purple-600 animate-pulse"
-                />
+                    className="p-2 border rounded-md text-gray-400 border-purple-600 animate-pulse"/>
             </div>
 
             {/* Category box */}
@@ -65,8 +64,8 @@ export default function NewItem (){
                 <select
                     value={category}
                     onChange={(e) => setCategory(e.target.value)}
-                    className="p-2 border rounded-md text-gray-400 border-purple-600 animate-pulse"
-                >
+                    className="p-2 border rounded-md text-gray-400 border-purple-600 animate-pulse">
+
                     {/* The list of options */}
                     <option value="produce">Produce</option>
                     <option value="dairy">Dairy</option>
@@ -82,15 +81,14 @@ export default function NewItem (){
 
                 </select>
             </div>
-      </div>
+        </div>
 
-      {/* Submit Button */}
-      <button
-        type="submit"
-        className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
-        >
-        Submit
-      </button>
+        {/* Submit Button */}
+        <button
+            type="submit"
+            className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
+            Submit
+        </button>
     </form>
   );
 }
