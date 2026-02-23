@@ -11,13 +11,13 @@ export default function NewItem ({ onAddItem }){
         event.preventDefault();
 
         const item = {
+            id: Math.random().toString(36).substring(2, 9),
             name,
             quantity,
             category
         };
 
-        console.log(item);
-        alert(`Added: ${name}, quantity: ${quantity}, category: ${category}`)
+        onAddItem(item)
 
         //This resets the form
         setName("");
