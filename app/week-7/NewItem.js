@@ -1,29 +1,31 @@
 "use client";
 import { useState } from "react";
 
+const initialState = { name: "", quantity: 1, category: "produce" };
+
 export default function NewItem ({ onAddItem }){
-    const [name, setName] = useState("");
-    const [quantity, setQuantity] = useState(1);
-    const [category, setCategory] = useState("produce");
+    const [item, setItem] = useState({...initialState});
 
     //This const handles the submit form
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        const item = {
-            id: Math.random().toString(36).substring(2, 9),
-            name,
-            quantity,
-            category
+        const newItem = {
+            ...item,
+            id: Math.random().toString(36).substring(2, 9)
         };
 
-        onAddItem(item)
+        onAddItem(newItem)
 
         //This resets the form
-        setName("");
-        setQuantity(1);
-        setCategory("produce");
+        setItem(initialState);
     }
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setItem((prev) => ({ ...prev, [name]: value }));
+    };
+
     return (
         <form onSubmit={handleSubmit} className="max-w-md bg-white p-4 rounded-lg">
         
@@ -33,9 +35,10 @@ export default function NewItem ({ onAddItem }){
         </label>
         <input
             type="text"
-            value={name}
+            name="name"
+            value={item.name}
             required
-            onChange={(e) => setName(e.target.value)}
+            onChange={(e) => handleChange(e)}
             placeholder="e.g., milk, 4 L 🥛"
             className="w-full p-2 mb-3 border rounded-md placeholder-gray-400 text-black border-purple-600 animate-pulse"/>
             
@@ -49,10 +52,11 @@ export default function NewItem ({ onAddItem }){
                 </label>
                 <input
                     type="number"
+                    name="quantity"
                     min="1"
                     max="99"
-                    value={quantity}
-                    onChange={(e) => setQuantity(Number(e.target.value))}
+                    value={item.quantity}
+                    onChange={(e) => handleChange(e)}
                     className="p-2 border rounded-md text-gray-400 border-purple-600 animate-pulse"/>
             </div>
 
@@ -62,8 +66,9 @@ export default function NewItem ({ onAddItem }){
                     Category
                 </label>
                 <select
-                    value={category}
-                    onChange={(e) => setCategory(e.target.value)}
+                    name="category"
+                    value={item.category}
+                    onChange={(e) => handleChange(e)}
                     className="p-2 border rounded-md text-gray-400 border-purple-600 animate-pulse">
 
                     {/* The list of options */}
