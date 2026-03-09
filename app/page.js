@@ -29,7 +29,7 @@ export default function HomePage() {
         Week 7 Assignment -
       </Link>
 
-      <Link href="/week-7">
+      <Link href="/week-8">
         Week 8 Assignment -
       </Link>
     </main>
