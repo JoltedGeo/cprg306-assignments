@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import itemsData from "./items.json";
 import ItemList from "./item-list";
 import NewItem from "./NewItem";
@@ -26,6 +27,13 @@ export default function Page() {
 
   return (
     <main className="relative min-h-screen px-22 pr-[700px]">
+        <div className="home-button-wrapper">
+                <Link href="/" className="home-button" >
+                    <span className="home-button-bg"></span>
+                    <span className="home-button-text">Homepage</span>
+                </Link>
+            </div>
+            
         <div className="flex flex-col items-center">
             <h1 className="text-2xl font-bold mb-3 text-purple-600 animate-pulse">
                 Shopping List

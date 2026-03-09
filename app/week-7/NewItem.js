@@ -28,7 +28,6 @@ export default function NewItem ({ onAddItem }){
 
     return (
         <form onSubmit={handleSubmit} className="max-w-md bg-white p-4 rounded-lg">
-        
         {/* Input box */}
         <label className="text-black">
             Item Name

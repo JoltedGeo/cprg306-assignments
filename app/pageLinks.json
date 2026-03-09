@@ -1,0 +1,30 @@
+[
+    {
+        "linkPath": "/week-2",
+        "name": "Week 2 Assignment - Introduction to React"
+    },
+    {
+        "linkPath": "/week-3",
+        "name": "Week 3 Assignment - Components and Props"
+    },
+    {
+        "linkPath": "/week-4",
+        "name": "Week 4 Assignment - Handling Lists"
+    },
+    {
+        "linkPath": "/week-5",
+        "name": "Week 5 Assignment - Basic Interactivity"
+    },
+    {
+        "linkPath": "/week-6",
+        "name": "Week 6 Assignment - Interactivity with Forms"
+    },
+    {
+        "linkPath": "/week-7",
+        "name": "Week 7 Assignment - Managing State"
+    },
+    {
+        "linkPath": "/week-8",
+        "name": "Week 8 Assignment - Fetching Data"
+    }
+]

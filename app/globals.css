@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -77,4 +76,45 @@ body::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-thumb:hover,
 body::-webkit-scrollbar-thumb:hover {
   background: #6b21a8;
+}
+
+.home-button-wrapper {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 50;
+}
+
+.home-button {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  font-weight: bold;
+  color: white;
+  transition: color 0.2s ease;
+}
+
+.home-button:hover {
+  color: rgb(243 232 255);
+}
+
+.home-button-bg {
+  position: absolute;
+  inset: 0;
+  border-radius: 0.25rem;
+  border: 2px solid rgb(147 51 234);
+  background: rgb(147 51 234 / 0.6);
+  opacity: 0.4;
+  transition: opacity 0.2s ease;
+}
+
+.home-button:hover .home-button-bg {
+  opacity: 0.7;
+}
+
+.home-button-text {
+  position: relative;
+  z-index: 10;
 }
