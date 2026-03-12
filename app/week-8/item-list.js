@@ -16,7 +16,6 @@ export default function ItemList({ items, onItemSelect }) {
     });
 
     return(
-        // Render buttons and use ${ x ? x : x} for expression
         <div>
             <div className="mb-2 flex justify-center pt-5 pb-3">
                 <button
@@ -32,9 +31,10 @@ export default function ItemList({ items, onItemSelect }) {
                 </button>
             </div>
 
+            {/* Render the sorted items in a grid layout with 3 columns and a gap between items */}
             <ul className="grid grid-cols-3 gap-4"  >
                 {sortedItems.map((item) => (
-                <Item
+                <Item className="hover:bg-purple-800"
                     key={item.id}
                     name={item.name}
                     quantity={item.quantity}
