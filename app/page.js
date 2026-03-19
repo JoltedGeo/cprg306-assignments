@@ -3,7 +3,7 @@ import linksData from "./pageLinks.json";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen px-[50px] py-8 text-white">
+    <main className="min-h-screen bg-black px-[50px] py-8 text-white">
       {/* Title */}
       <h1 className="mb-6 text-2xl font-bold">
         CPRG 306: Web Development 2 - Assignments
@@ -11,7 +11,7 @@ export default function HomePage() {
 
       {/* Margin and y borders */}
       <div className="border-y border-purple-600/70">
-        <div className="mx-auto max-w-7xl border-x border-purple-600/70 px-6 py-8">
+        <div className="mx-auto max-w-7xl border-x border-purple-600/70 px-6 py-8 h-[800px]">
           <div className="flex gap-6">
 
             {/* Navigation Links */}
