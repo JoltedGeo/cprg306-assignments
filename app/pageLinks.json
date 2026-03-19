@@ -26,5 +26,9 @@
     {
         "linkPath": "/week-8",
         "name": "Week 8 Assignment - Fetching Data"
+    },
+    {
+        "linkPath": "/week-9",
+        "name": "Week 9 Assignment - Firebase Authentication"
     }
 ]

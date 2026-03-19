@@ -21,7 +21,7 @@ export default function HomePage() {
                   <Link
                     key={item.linkPath}
                     href={item.linkPath}
-                    className="rounded-lg border border-purple-600 bg-purple-900/30 p-4 font-semibold transition hover:bg-purple-700 hover:text-black"
+                    className="w-[120px] min-h-[90px] flex items-center justify-center text-center rounded-lg border border-purple-600 bg-purple-900/30 p-4 font-semibold transition hover:bg-purple-700 hover:text-black break-words"
                   >
                     {item.name}
                   </Link>
