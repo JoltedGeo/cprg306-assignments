@@ -50,9 +50,13 @@ export default function MealIdeas({ ingredient }) {
         If theres no ingredient selected, show a message prompting the user to select an ingredient
         */}
         <div className="bg-black p-4 rounded-lg h-128 overflow-y-auto border-2 border-purple-600 purple-scrollbar">
-            {meals.length === 0 ? (
+            {!ingredient ? (
                 <p className="text-purple-400 italic">
                 Please select an ingredient to show meal ideas.
+                </p>
+            ) : meals.length === 0 ? (
+                <p className="text-purple-400 italic">
+                No meal ideas for this ingredient.
                 </p>
             ) : (
             <ul className="grid grid-cols-3 gap-2">

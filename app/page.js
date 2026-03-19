@@ -3,21 +3,21 @@ import linksData from "./pageLinks.json";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-black px-[50px] py-8 -white">
+    <main className="min-h-screen px-[50px] py-8 text-white">
       {/* Title */}
-      <h1 className="mb-6 text-3xl font-bold">
+      <h1 className="mb-6 text-2xl font-bold">
         CPRG 306: Web Development 2 - Assignments
       </h1>
 
       {/* Margin and y borders */}
-      <div className="border-y border-purple-600/50">
-        <div className="mx-auto max-w-7xl border-x border-purple-600/50 px-6 py-8">
+      <div className="border-y border-purple-600/70">
+        <div className="mx-auto max-w-7xl border-x border-purple-600/70 px-6 py-8">
           <div className="flex gap-6">
 
             {/* Navigation Links */}
-            <div className="w-[620px] h-[800px] bg-black border border-purple-600 justify-items-center p-6 rounded-lg shadow-lg">
+            <div className="w-[620px] h-[600px] bg-black border border-purple-600 justify-items-center p-6 rounded-lg shadow-lg">
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 max-w-4xl mx-auto justify-items-center ">
-                {linksData.map((item) => (
+                {linksData.map((item, index) => (
                   <Link
                     key={item.linkPath}
                     href={item.linkPath}
