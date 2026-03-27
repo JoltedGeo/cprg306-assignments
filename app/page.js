@@ -15,13 +15,13 @@ export default function HomePage() {
           <div className="flex gap-6">
 
             {/* Navigation Links */}
-            <div className="w-[620px] h-[600px] bg-black border border-purple-600 justify-items-center p-6 rounded-lg shadow-lg">
+            <div className="w-[620px] h-[700px] bg-black border border-purple-600 justify-items-center p-6 rounded-lg shadow-lg">
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 max-w-4xl mx-auto justify-items-center ">
                 {linksData.map((item, index) => (
                   <Link
                     key={item.linkPath}
                     href={item.linkPath}
-                    className="w-[120px] min-h-[90px] flex items-center justify-center text-center rounded-lg border border-purple-600 bg-purple-900/30 p-4 font-semibold transition hover:bg-purple-700 hover:text-black break-words"
+                    className="w-[120px] min-h-[100px] flex items-center justify-center text-center rounded-lg border border-purple-600 bg-purple-900/30 p-4 font-semibold transition hover:bg-purple-700 hover:text-black break-words"
                   >
                     {item.name}
                   </Link>
