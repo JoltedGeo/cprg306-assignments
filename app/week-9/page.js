@@ -6,19 +6,21 @@ export default function Week9Page() {
     const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
 
     const handleLogin = async () => {
-    try {
+        try {
         await gitHubSignIn();
-    } catch (error) {
-        console.log(error);
-    }
+        } catch (error) {
+        console.error("GitHub login error:", error);
+        alert(error.message);
+        }
     };
 
     const handleLogout = async () => {
-    try {
+        try {
         await firebaseSignOut();
-    } catch (error) {
-        console.log(error);
-    }
+        } catch (error) {
+        console.error("Logout error:", error);
+        alert(error.message);
+        }
     };
 
     return (
